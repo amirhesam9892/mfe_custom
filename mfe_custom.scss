@@ -1,0 +1,40 @@
+/* AUT-like Academic Theme */
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("/fonts/Vazirmatn-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("/fonts/Vazirmatn-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+html[lang="fa-ir"] body {
+  font-family: "Vazirmatn", sans-serif !important;
+  direction: rtl;
+  text-align: right;
+}
+
+:root {
+  --brand-primary: #002b5c;
+  --brand-secondary: #00509e;
+  --brand-accent: #c9a227;
+}
+
+.custom-footer {
+  background-color: #001f3f;
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.custom-footer .footer-links a {
+  color: #c9a227;
+  margin: 0 15px;
+  text-decoration: none;
+}
