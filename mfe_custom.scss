@@ -1,40 +1,49 @@
-/* AUT-like Academic Theme */
-
+/* تایپوگرافی فارسی و رنگ دانشگاهی */
 @font-face {
-  font-family: "Vazirmatn";
-  src: url("/fonts/Vazirmatn-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
+    font-family: "Vazirmatn";
+    src: url("/fonts/Vazirmatn-Regular.woff2") format("woff2");
+    font-weight: 400;
 }
-
 @font-face {
-  font-family: "Vazirmatn";
-  src: url("/fonts/Vazirmatn-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
+    font-family: "Vazirmatn";
+    src: url("/fonts/Vazirmatn-Bold.woff2") format("woff2");
+    font-weight: 700;
 }
 
 html[lang="fa-ir"] body {
-  font-family: "Vazirmatn", sans-serif !important;
-  direction: rtl;
-  text-align: right;
+    font-family: "Vazirmatn", sans-serif !important;
+    direction: rtl;
+    text-align: right;
 }
 
 :root {
-  --brand-primary: #002b5c;
-  --brand-secondary: #00509e;
-  --brand-accent: #c9a227;
+    --brand-primary: #002b5c;
+    --brand-secondary: #00509e;
+    --brand-accent: #c9a227;
 }
 
+/* دکمه‌ها */
+button, .btn-primary {
+    background-color: var(--brand-primary) !important;
+    border-color: var(--brand-primary) !important;
+}
+
+button:hover, .btn-primary:hover {
+    background-color: var(--brand-secondary) !important;
+}
+
+/* Footer سفارشی */
 .custom-footer {
-  background-color: #001f3f;
-  color: #ffffff;
-  padding: 40px 0;
-  text-align: center;
+    background-color: #001f3f;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
 }
-
-.custom-footer .footer-links a {
-  color: #c9a227;
-  margin: 0 15px;
-  text-decoration: none;
+.custom-footer a {
+    color: #c9a227;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.custom-footer a:hover {
+    text-decoration: underline;
 }
